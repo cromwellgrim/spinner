@@ -1,39 +1,36 @@
-const spokes = ['\r/   ', '\r-  ', '\r\\   ', '\r|   ', '\r/   ', '\r-  ', '\r\\   ', '\r|   '];
-
-
-setTimeout( () => {
+setTimeout(() => {
   process.stdout.write('\r/   ');
 }, 100);
 
-setTimeout( () => {
+setTimeout(() => {
   process.stdout.write('\r-   ');
 }, 300);
 
-setTimeout( () => {
+setTimeout(() => {
   process.stdout.write('\r\\   ');
 }, 500);
 
-setTimeout( () => {
+setTimeout(() => {
   process.stdout.write('\r|   ');
 }, 700);
 
-setTimeout( () => {
+setTimeout(() => {
   process.stdout.write('\r/   ');
 }, 900);
 
-setTimeout( () => {
+setTimeout(() => {
   process.stdout.write('\r-   ');
 }, 1100);
 
-setTimeout( () => {
+setTimeout(() => {
   process.stdout.write('\r\\   ');
 }, 1300);
 
-setTimeout( () => {
+setTimeout(() => {
   process.stdout.write('\r|   ');
 }, 1500);
 
-setTimeout( () => {
+setTimeout(() => {
   console.log('');
 }, 1700);
 
