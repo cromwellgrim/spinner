@@ -1,16 +1,39 @@
-function spinner() {
-  
-  const spokes = ['\r/   ', '\r-  ', '\r\\   ', '\r|   ', '\r/   ', '\r-  ', '\r\\   ', '\r|   '];
-  let delay = 100;
-  for (let i = 0; i < spokes.length; i++) {
-    setTimeout( () => {
-      process.stdout.write(spokes[i]);
-    }, delay);
-    delay += 100;
-  }
-  setTimeout( () => {
-    console.log('');
-  }, 1700);
-};
+const spokes = ['\r/   ', '\r-  ', '\r\\   ', '\r|   ', '\r/   ', '\r-  ', '\r\\   ', '\r|   '];
 
-spinner();
+
+setTimeout( () => {
+  process.stdout.write('\r/   ');
+}, 100);
+
+setTimeout( () => {
+  process.stdout.write('\r-   ');
+}, 300);
+
+setTimeout( () => {
+  process.stdout.write('\r\\   ');
+}, 500);
+
+setTimeout( () => {
+  process.stdout.write('\r|   ');
+}, 700);
+
+setTimeout( () => {
+  process.stdout.write('\r/   ');
+}, 900);
+
+setTimeout( () => {
+  process.stdout.write('\r-   ');
+}, 1100);
+
+setTimeout( () => {
+  process.stdout.write('\r\\   ');
+}, 1300);
+
+setTimeout( () => {
+  process.stdout.write('\r|   ');
+}, 1500);
+
+setTimeout( () => {
+  console.log('');
+}, 1700);
+
